@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/villageInfotoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+    <TextView
+        android:id="@+id/villageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/villageInfotoolbar"
+        android:layout_margin="20dip"
+        android:text="본법마을"
+        android:textAlignment="viewStart"
+        android:textSize="36sp"
+        android:textColor="@color/pointColor"/>
+
+    <ImageView
+        android:id="@+id/villageImg"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:src="@drawable/bonbupvill"
+        android:scaleType="fitXY"
+        android:layout_marginRight="20dip"
+        android:layout_alignTop="@+id/villageName"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/villageAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/villageImg"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:text="주소 : "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/villageAddressContents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="20dip"
+        android:text="경상남도 양산시 동면 법기로 163"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/villageAddress"
+        android:layout_alignBottom="@+id/villageAddress"
+        android:layout_toRightOf="@+id/villageAddress" />
+
+    <TextView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/villageAddress"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:padding="30dip"
+        android:text="지도지도지도지도"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/villagePopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:text="인구수 : "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/villagePopulationContents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="20dip"
+        android:text="남 25 여 30"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/villagePopulation"
+        android:layout_alignBottom="@+id/villagePopulation"
+        android:layout_toRightOf="@+id/villagePopulation" />
+
+    <TextView
+        android:id="@+id/villageBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/villagePopulation"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:text="마을경유버스노선 : "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/villageBusContents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="20dip"
+        android:text="4개"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/villageBus"
+        android:layout_alignBottom="@+id/villageBus"
+        android:layout_toRightOf="@+id/villageBus" />
+</RelativeLayout>

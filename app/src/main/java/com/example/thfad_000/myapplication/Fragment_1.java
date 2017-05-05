@@ -9,10 +9,11 @@ import android.view.ViewGroup;
 /**
  * Created by thfad_000 on 2017-04-11.
  */
-public class Fragment_1 extends Fragment {
+public class Fragment_1 extends Fragment{
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_1, container, false);
         return view;
     }
+
 }
